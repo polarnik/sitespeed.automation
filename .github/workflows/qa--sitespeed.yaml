@@ -36,4 +36,5 @@ jobs:
           echo test, and deploy your project.
           ls -la
           pwd
-          ./src/bash/check.with.different.configs.sh
+          cd ./src/bash/
+          ./check.with.different.configs.sh
