@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*!
+ * Marp / Marpit Heisenbug theme.
+ *
+ * @theme perfconf
+ * @auto-scaling true
+ * @author Smirnov Viacheslav
+ */
+
+@import 'baseConference';
+
+:root {
+    --logo: url("themes/img/perfconf.svg");
+}

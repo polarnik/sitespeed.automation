@@ -1,0 +1,64 @@
+{
+  "extends": "../default.json",
+
+  "browsertime": {
+    "browser": "chrome",
+    "firefox": {
+      "appendToUserAgent": " crawler/1.0",
+      "preference": [
+
+      ],
+      "args": [
+
+      ],
+      "profileTemplate": "/tmp/firefox-profile-template/",
+
+      "includeResponseBodies": "none",
+      "memoryReport": false,
+      "memoryReportParams": {
+        "minizeFirst": false
+      },
+      "geckoProfiler": false,
+      "geckoProfilerRecordingType": "pageload",
+      "geckoProfilerParams": {
+        "features": "js,stackwalk,leaf",
+        "threads": "GeckoMain,Compositor,Renderer",
+        "interval": 1,
+        "bufferSize": 13107200
+      },
+      "windowRecorder": false,
+      "disableSafeBrowsing": true,
+      "disableTrackingProtection": true,
+      "appconstants": false,
+      "bidihar": false,
+      "perfStats": false,
+      "perfStatsParams": {
+        "mask": 4294967295
+      },
+      "setMozLog": "timestamp,nsHttp:5,cache2:5,nsSocketTransport:5,nsHostResolver:5",
+      "noDefaultPrefs": false
+    },
+    "spa": true,
+    "limitedRunData": false,
+    "connectivity": {
+      "engine": "throttle",
+      "profile": "cable"
+    },
+    "viewPort": "3456×2234",
+    "appendToUserAgent": " crawler/1.0",
+    "preURL": "https://google.com",
+    "visualMetrics": true,
+    "video": true,
+    "requestheader": [
+      "x-request-id:abcdabcdabcdabcdabcdabcd0000abcd",
+      "x-b3-traceid:abcdabcdabcdabcdabcdabcd0000abcd"
+    ],
+    "screenshotLCP": true,
+    "screenshotLS": true,
+    "cpu": true,
+    "utc": true
+  },
+  "useHash": true,
+  "cpu": true,
+  "utc": true
+}

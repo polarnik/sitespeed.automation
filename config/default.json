@@ -1,0 +1,288 @@
+{
+  "extends": "./secret.json",
+  "Developer.Info": {
+    "source1": "https://github.com/sitespeedio/sitespeed.io/blob/main/lib/cli/cli.js",
+    "source2": "https://github.com/sitespeedio/sitespeed.io/blob/main/docs/documentation/browsertime/configuration/config.md?plain=1"
+  },
+  "debugMessages": false,
+  "browsertime": {
+    "__android": {
+      "gnirehtet": false,
+      "rooted": false,
+      "batteryTemperatureWaitTimeInSeconds": 120,
+      "verifyNetwork": false
+    },
+    "bidihar": false,
+    "browser": "chrome",
+    "chrome": {
+      "timeline": false,
+      "android": false,
+      "__android.rooted": false,
+      "__android.batteryTemperatureWaitTimeInSeconds": 120,
+      "__android.verifyNetwork": false,
+      "cdp": {
+        "performance": true
+      },
+      "ignoreCertificateErrors": true,
+      "includeResponseBodies": "none"
+    },
+    "cjs": false,
+    "__connectivity": {
+      "profile": "native",
+      "engine": "external"
+    },
+    "debug": false,
+    "decimals": 0,
+    "delay": 0,
+    "headless": false,
+
+    "iterations": "3",
+    "firefox": {
+      "includeResponseBodies": "none",
+      "memoryReport": false,
+      "memoryReportParams": {
+        "minizeFirst": false
+      },
+      "geckoProfiler": false,
+      "geckoProfilerRecordingType": "pageload",
+      "geckoProfilerParams": {
+        "features": "js,stackwalk,leaf",
+        "threads": "GeckoMain,Compositor,Renderer",
+        "interval": 1,
+        "bufferSize": 13107200
+      },
+      "windowRecorder": false,
+      "disableSafeBrowsing": true,
+      "disableTrackingProtection": true,
+      "appconstants": false,
+      "perfStats": false,
+      "perfStatsParams": {
+        "mask": 4294967295
+      },
+      "setMozLog": "timestamp,nsHttp:5,cache2:5,nsSocketTransport:5,nsHostResolver:5",
+      "noDefaultPrefs": false
+    },
+    "flushDNS": false,
+    "limitedRunData": true,
+
+    "pageCompleteWaitTime": 8000,
+    "pageCompleteCheckInactivity": false,
+    "pageCompleteCheckPollTimeout": 1500,
+    "pageCompleteCheckStartWait": 500,
+    "pageLoadStrategy": "none",
+    "preWarmServer": false,
+    "preWarmServerWaitTime": 5000,
+    "spa": false,
+    "scriptInput": {
+      "longTask": 50
+    },
+    "tcpdump": false,
+    "timeouts": {
+      "browserStart": 60000,
+      "pageLoad": 300000,
+      "script": 120000,
+      "pageCompleteCheck": 120000
+    },
+
+    "viewPort": "1366x708",
+    "visualMetricsPortable": true,
+
+    "videoParams": {
+      "framerate": 30,
+      "crf": 23,
+      "addTimer": true,
+      "convert": true,
+      "keepOriginalVideo": false,
+      "filmstripFullSize": false,
+      "filmstripQuality": 75,
+      "createFilmstrip": true,
+      "thumbsize": 400
+    },
+    "xvfb": false,
+    "xvfbParams": {
+      "display": 99
+    },
+
+    "safari": {
+      "ios": false,
+      "useTechnologyPreview": false,
+      "useSimulator": false
+    },
+
+    "screenshot": true,
+    "screenshotParams": {
+      "type": "png",
+      "png": {
+        "compressionLevel": 6
+      },
+      "jpg": {
+        "quality": 80
+      },
+      "maxSize": 2000
+    },
+    "processStartTime": false,
+    "prettyPrint": false,
+    "timeToSettle": 0,
+    "webdriverPageload": false,
+    "percentiles": [
+      0,
+      10,
+      90,
+      99,
+      100
+    ],
+    "iqr": false,
+    "cacheClearRaw": false,
+    "preURLDelay": 1500,
+    "warmLoadDealy": 1500
+  },
+  "filmstrip": {
+    "showAll": false
+  },
+  "__scp": {
+    "port": 22,
+    "removeLocalResult": true
+  },
+  "__grafana": {
+    "port": 80,
+    "annotationScreenshot": false
+  },
+  "__graphite": {
+    "port": 2003,
+    "httpPort": 8080,
+    "proxyPath": "",
+    "namespace": "sitespeed_io.default",
+    "includeQueryParams": false,
+    "arrayTags": true,
+    "annotationScreenshot": false,
+    "sendAnnotation": true,
+    "statsd": false,
+    "addSlugToKey": true,
+    "messages": [
+      "pageSummary",
+      "run"
+    ]
+  },
+  "_influxdb": {
+    "protocol": "http",
+    "port": 8086,
+    "version": 1,
+    "database": "sitespeed",
+    "tags": "category=default",
+    "includeQueryParams": false,
+    "groupSeparator": "_",
+    "annotationScreenshot": false
+  },
+  "metrics": {
+    "list": false,
+    "filterList": false
+  },
+  "__matrix": {
+    "messages": [
+      "error",
+      "budget"
+    ]
+  },
+  "__slack": {
+    "userName": "Sitespeed.io",
+    "type": "all",
+    "limitWarning": 90,
+    "limitError": 80,
+    "limitMetric": "coachScore"
+  },
+  "__s3": {
+    "removeLocalResult": false
+  },
+  "__crux": {
+    "key": "",
+    "enable": false,
+    "formFactor": "ALL",
+    "collect": "ALL"
+  },
+  "html": {
+    "showAllWaterfallSummary": false,
+    "fetchHARFiles": false,
+    "logDownloadLink": false,
+    "topListSize": 10,
+    "showScript": false,
+    "pageSummaryMetrics": [
+      "transferSize.total",
+      "requests.total",
+      "thirdParty.requests",
+      "transferSize.javascript",
+      "transferSize.css",
+      "transferSize.image",
+      "score.performance"
+    ],
+    "summaryBoxes": [
+      "score.score",
+      "score.accessibility",
+      "score.bestpractice",
+      "score.privacy",
+      "score.performance",
+      "timings.firstPaint",
+      "timings.firstContentfulPaint",
+      "timings.fullyLoaded",
+      "timings.pageLoadTime",
+      "timings.largestContentfulPaint",
+      "timings.FirstVisualChange",
+      "timings.LastVisualChange",
+      "timings.SpeedIndex",
+      "timings.PerceptualSpeedIndex",
+      "timings.VisualReadiness",
+      "timings.VisualComplete",
+      "timings.backEndTime",
+      "googleWebVitals.cumulativeLayoutShift",
+      "requests.total",
+      "requests.javascript",
+      "requests.css",
+      "requests.image",
+      "transferSize.total",
+      "transferSize.html",
+      "transferSize.javascript",
+      "contentSize.javascript",
+      "transferSize.css",
+      "transferSize.image",
+      "thirdParty.transferSize",
+      "thirdParty.requests",
+      "webpagetest.SpeedIndex",
+      "webpagetest.lastVisualChange",
+      "webpagetest.render",
+      "webpagetest.visualComplete",
+      "webpagetest.visualComplete95",
+      "webpagetest.TTFB",
+      "webpagetest.fullyLoaded",
+      "axe.critical",
+      "axe.serious",
+      "axe.minor",
+      "axe.moderate",
+      "cpu.longTasksTotalDuration",
+      "cpu.longTasks",
+      "cpu.totalBlockingTime",
+      "cpu.maxPotentialFid",
+      "sustainable.totalCO2",
+      "sustainable.co2PerPageView",
+      "sustainable.co2FirstParty",
+      "sustainable.co2ThirdParty"
+    ]
+  },
+  "summary": false,
+  "summary-detail": false,
+  "__sustainable": {
+    "model": "1byte",
+    "disableHosting": false,
+    "useGreenWebHostingAPI": false
+  },
+  "api": {
+    "action": "addAndGetResult",
+    "silent": false,
+    "port": 3000
+  },
+  "mobile": false,
+  "gzipHAR": false,
+  "copyLatestFilesToBase": false,
+  "utc": false,
+  "logToFile": false,
+  "useHash": false,
+  "multi": false
+}
