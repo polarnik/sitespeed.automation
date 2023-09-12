@@ -1,0 +1,9 @@
+{
+  "name": "sitespeed.automation",
+  "version": "1.0.0",
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.33.2",
+    "influx": "^5.9.3",
+    "proxy-agent": "^6.3.1"
+  }
+}

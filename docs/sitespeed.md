@@ -28,25 +28,33 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 # Ускоряю ![h:55](themes/img/miro.svg) Miro
 ## Развиваю ![h:55](themes/img/Telegram_logo.svg) @qa_load
-### Хожу под рюкзаком
+
 
 ![bg cover](img/omsk.jpg)
 
 ---
+### 1. Почему SiteSpeed хорош
+## 2. Запустим простой тест
+## 3. Переопределим параметры
+## 4. Демонстрация
 
-<!-- _class: main problem -->
+## 5. Обсудим вопросы из ![h:40](themes/img/Telegram_logo.svg) @perfconfbot
+
+---
+
+<!-- _class: main -->
 
 # Часто начинают нагрузку с __API__, и уже потом смотрят на __Web__
 
 ---
 
-<!-- _class: main problem -->
+<!-- _class: main  -->
 
 # Больших компаний мало. Небольших компаний много, и им нужны __FullStack__-и
 
 ---
 
-<!-- _class: main problem -->
+<!-- _class: main  -->
 
 # __Тестовый стенд__, данные и их поддержка — сложнейшие задачи в нагрузке
 
@@ -56,15 +64,6 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 # SiteSpeed
 
-
----
-
-### 1. Почему SiteSpeed хорош
-## 2. Запустим простой тест
-## 3. Найдем параметры по умолчанию
-## 4. Переопределим параметры
-## 5. Прочитаем документацию
-## 6. Демонстрация и итоги
 
 ---
 
@@ -88,7 +87,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Как начать заниматься тестами __производительности__, имея опыт с __Selenium__?
 
@@ -101,7 +100,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Как двигаться в сторону __FullStack Performance Engineer__, имея опыт нагрузки API?
 
@@ -114,7 +113,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Как тестировать производительность __без тестового стенда__?
 
@@ -127,7 +126,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 ## Без особых тестовых данных
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # С каких тестов __продуктива__ проще всего начать?
 
@@ -140,7 +139,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Какие есть __инструменты__ для тестов клиентской производительности?
 
@@ -184,13 +183,13 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Какие __типы тестов__ можно выполнить?
 
 ---
 
-<!-- _class: main2 solution -->
+<!-- _class: main2  -->
 
 # __Первое__ открытие страницы, __повторное__ открытие страницы, в __Chrome__, __Mozilla__, __Edge__, __Safari__, __эмулируя__ мобильный браузер, c __Selenium__-скриптом, ...
 
@@ -199,14 +198,14 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ## 1. Почему SiteSpeed хорош
 ### 2. Запустим простой тест
-## 3. Найдем параметры по умолчанию
-## 4. Переопределим параметры
-## 5. Прочитаем документацию
-## 6. Демонстрация и итоги
+## 3. Переопределим параметры
+## 4. Демонстрация
+
+## 5. Обсудим вопросы из ![h:40](themes/img/Telegram_logo.svg) @perfconfbot
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Как сделать тест с настройками __по умолчанию__ в __sitespeed.io__ через __Docker__?
 
@@ -219,7 +218,7 @@ docker run \
   --shm-size=1g \
   --rm \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
   --slug "miro" \
   --urlAlias "miro" \
@@ -239,7 +238,7 @@ docker run \
 ```sh
   --rm \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
   --slug "miro" \
   --urlAlias "miro" \
@@ -259,7 +258,7 @@ docker run \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
 ```
 ```sh
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
 ```
 ```bash
@@ -284,7 +283,7 @@ docker run \
   --shm-size=1g \
   --rm \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
   --slug "miro" \
 ```
@@ -306,137 +305,41 @@ docker run \
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
-# Что делает docker-тест с настройками по умолчанию __(для версии 29.3.0-plus1)__?
+# Что делает docker-тест с настройками по умолчанию __(для версии 29.5.0-plus1)__?
 
 ---
 
-# OS: __Ubuntu 22.04__
-# Browser: __Chromium 107__
-# Cache: __Off__
-# Display: __1366x708__
-# Iterations: __3__
-# Timeout (selenium): __120__ sec
-# Timeout (lighthouse): __35__ sec
+# Параметры по умолчанию SiteSpeed
+
+## Cache: __Off__
+## Display: __1366x708__
+## Browser: __Chromium 107__ (arm), __Chrome 116__ (Intel)
+## Iterations: __3__
+## Timeout (selenium): __120__ sec
 
 
 ---
 <!-- _class: main2 invert -->
-
-# __Summary__
 
 
 ![bg](img/Sitespeed.default.Summary.png)
 
----
-<!-- _class: main2 invert -->
-
-# __Summary__
-
-## __метрики и их статусы__
-
-![bg](img/Sitespeed.default.Summary.png)
-
-
----
-<!-- _class: main2 invert -->
-
-# __Detailed Summary__
-
-
-
-![bg](img/Sitespeed.default.Detailed.Summary.png)
-
----
-<!-- _class: main2 invert -->
-
-# __Detailed Summary__
-
-
-## __статистика по метрикам__
-
-![bg](img/Sitespeed.default.Detailed.Summary.png)
-
----
-<!-- _class: main2 invert -->
-
-# __Pages__
-
-
-![bg](img/Sitespeed.default.Pages.png)
-
----
-<!-- _class: main2 invert -->
-
-# __Pages__
-## __страницы и метрики по ним__
-
-![bg](img/Sitespeed.default.Pages.png)
-
----
-<!-- _class: main2 invert -->
-
-# __Pages / Miro / Side by side__
-
-
-![bg](img/Sitespeed.default.Pages.SideBySide.png)
-
-
----
-
-![bg](img/Sitespeed.default.Pages.Summary.png)
 
 ---
 
 ![bg](img/Sitespeed.default.Pages.Waterfall.png)
 
----
-
-![bg](img/Sitespeed.default.Pages.Metrics.png)
-
----
-
-![bg](img/Sitespeed.default.Pages.Video.png)
 
 ---
 
 ![bg](img/Sitespeed.default.Pages.Filmstrip.png)
 
----
-
-![bg](img/Sitespeed.default.Pages.Coach.png)
 
 ---
 
-![bg](img/Sitespeed.default.Pages.Pagexray.png)
-
----
-
-![bg](img/Sitespeed.default.Pages.ThirdParty.png)
-
----
-<!-- _class: main2 invert -->
-
-# __Domains__
-
-## __метрики по доменам__
-
-![bg](img/Sitespeed.default.Domains.png)
-
-
----
-<!-- _class: main2 invert -->
-
-# __Toplist__
-
-## __наибольшие файлы__
-
-![bg](img/Sitespeed.default.Toplist.png)
-
----
-
-<!-- _class: main solution -->
+<!-- _class: main  -->
 
 # Метрик и данных в отчете __очень много__
 
@@ -445,16 +348,27 @@ docker run \
 
 ## 1. Почему SiteSpeed хорош
 ## 2. Запустим простой тест
-### 3. Найдем параметры по умолчанию
-## 4. Переопределим параметры
-## 5. Прочитаем документацию
-## 6. Демонстрация и итоги
+### 3. Переопределим параметры
+## 4. Демонстрация
+
+## 5. Обсудим вопросы из ![h:40](themes/img/Telegram_logo.svg) @perfconfbot
 
 ---
 
-<!-- _class: main -->
+<!-- _class: main problem -->
 
 # Как узнать настройки __по умолчанию__?
+
+---
+
+<!-- _class: main2  -->
+
+#  Поиском в документации по __default__
+
+
+---
+
+![bg](img/Documentation.default.png)
 
 ---
 
@@ -464,15 +378,12 @@ docker run \
 
 ## Так отображаются не все настройки
 
----
-
-![bg](img/Documentation.default.png)
 
 ---
 
-<!-- _class: main solution -->
+<!-- _class: main2 -->
 
-# Запустить тест с __verbose__ логами (надежнее)
+# Запустить тест с __verbose__ логами 
 
 ---
 
@@ -483,7 +394,7 @@ docker run \
   --shm-size=1g \
   --rm \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
 ```
 ```bash
   --verbose \
@@ -594,10 +505,7 @@ https://gist.github.com/polarnik/48d3dabd8119d694f0bae2a879d100f8
     },
     "screenEmulation": {
       "mobile": false,
-      "width": 1350,
-      "height": 940,
-      "deviceScaleFactor": 1,
-      "disabled": false
+      ...
     },
     ...,
   }
@@ -612,83 +520,44 @@ https://gist.github.com/polarnik/48d3dabd8119d694f0bae2a879d100f8
 ## __576__ + __172__ + __53__ + __28__ + __...__ = __829__
 
 # Параметров по умолчанию __очень много__
----
-
-<!-- _class: main -->
-
-# Какие __недостатки__ есть в docker-тесте по умолчанию __(для версии 29.3.0-plus1)__?
 
 ---
 
-# OS: __Ubuntu 22.04__ (__Android__ - __42__% 🌐, Windows - __29__% 🌐, __62__% 🖥️)
-# Browser: __Chromium 107__ (__Google Chrome__ - __61__% 🌐)
-# Cache: __Off__
-# Display: __1366x708__
-# Iterations: __3__
-# Timeout (selenium): __120__ sec
-# Timeout (lighthouse): __35__ sec
+<!-- _class: main2 error -->
 
+# Запустить тест с __verbose__ логами 
 
----
-
-<!-- _class: main -->
-
-# Как поменять OS и Browser?
-
----
-
-<!-- _class: main2 solution -->
-
-# Использовать SiteSpeed __Node.JS__ вместо Docker-сборки
-
-## И свои OS и Browser (__Chrome__)
-
----
-
-
-<!-- _class: main -->
-
-# Как включить Cache браузера?
-
-
-
----
-
-![bg](img/metrics.without.cache.png)
+## Так отображаются лишние настройки
 
 ---
 
 <!-- _class: main solution -->
 
-# __Без кеша__ метрики для __3-х__ итераций __одинаковые__
+# Узнать параметры по умолчанию можно комбинируя информацию из документации и verbose-логов
 
 ---
 
-<!-- _class: main invert -->
+<!-- _class: main problem  -->
+
+# Как протестировать повторное открытие страницы?
+
+
+---
+
+<!-- _class: main2 invert -->
 
 ![bg](img/metrics.without.cache.png)
 
-# Без кеша метрики для 3-х итераций одинаковые
-
-
----
-
-## 1. Почему SiteSpeed хорош
-## 2. Запустим простой тест
-## 3. Найдем параметры по умолчанию
-### 4. Переопределим параметры
-## 5. Прочитаем документацию
-## 6. Демонстрация и итоги
+# Total requests = __109__
+## Без кеша метрики для 3-х итераций одинаковые
 
 ---
 
-<!-- _class: main -->
-
-# Как включить __кеш__ браузера __chrome__ для одной итерации?
+![bg](img/metrics.without.cache.png)
 
 ---
 
-# Запуск теста с кешированием (для 1 итерации)
+# Запуск теста с кешированием
 
 ```bash
 docker run \
@@ -696,102 +565,7 @@ docker run \
   --rm \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
   -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
-  --verbose \
-  --slug "miro" \
-  --urlAlias "miro" \
-  --chrome.args "user-data-dir=/tmp/chrome-user-data-dir" \
-  --chrome.cleanUserDataDir "true" \
-  "https://miro.com"
-```
-
----
-
-# Добавляем каталог для профиля браузера
-
-```sh
-docker run \
-  --shm-size=1g \
-  --rm \
-  -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-```
-```bash
-  -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
-```
-```sh
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
-  --verbose \
-  --slug "miro" \
-  --urlAlias "miro" \
-  --chrome.args "user-data-dir=/tmp/chrome-user-data-dir" \
-  --chrome.cleanUserDataDir "true" \
-  "https://miro.com"
-```
-
----
-
-# Указываем браузеру путь к каталогу профиля
-
-```sh
-docker run \
-  --shm-size=1g \
-  --rm \
-  -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
-  --verbose \
-  --slug "miro" \
-  --urlAlias "miro" \
-```
-```bash
-  --chrome.args "user-data-dir=/tmp/chrome-user-data-dir" \
-```
-```sh
-  --chrome.cleanUserDataDir "true" \
-  "https://miro.com"
-```
-
----
-
-# Включаем очистку кеша перед каждой итерацией
-
-```sh
-docker run \
-  --shm-size=1g \
-  --rm \
-  -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
-  --verbose \
-  --slug "miro" \
-  --urlAlias "miro" \
-  --chrome.args "user-data-dir=/tmp/chrome-user-data-dir" \
-```
-```bash
-  --chrome.cleanUserDataDir "true" \
-```
-```sh
-  "https://miro.com"
-```
-
-
----
-
-<!-- _class: main -->
-
-# Как включить __кеш__ браузера __chrome__ для всех итераций?
-
----
-
-# Запуск теста с кешированием (для всех итераций)
-
-```bash
-docker run \
-  --shm-size=1g \
-  --rm \
-  -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
   --slug "miro" \
   --urlAlias "miro" \
@@ -813,7 +587,7 @@ docker run \
   -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
 ```
 ```sh
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
   --slug "miro" \
   --urlAlias "miro" \
@@ -831,7 +605,7 @@ docker run \
   --rm \
   -v "$(pwd)/sitespeed.io:/sitespeed.io" \
   -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \
-  sitespeedio/sitespeed.io:29.3.0-plus1 \
+  sitespeedio/sitespeed.io:29.5.0-plus1 \
   --verbose \
   --slug "miro" \
   --urlAlias "miro" \
@@ -844,126 +618,54 @@ docker run \
 ```
 
 ---
-<!-- _class: main invert -->
+<!-- _class: main2 invert -->
 
-## __103__ requests на __1__-й итерации
-
-![bg](img/metrics.with.cache.png)
-
----
-<!-- _class: main invert -->
-
-## __12__ requests на __2__ и __3__. Кеш есть!
+# __103__ requests на __1__-й итерации
 
 ![bg](img/metrics.with.cache.png)
 
 ---
+<!-- _class: main2 invert -->
 
-<!-- _class: main2 -->
+# __12__ requests на __2__ и __3__
+
+## Кеширует!
+
+![bg](img/metrics.with.cache.png)
+
+---
+
+<!-- _class: main2 problem -->
 
 # Как сделать __все__ итерации теста __с кешированием__?
 
 ## Три итерации по __12__ requests
 
----
-
-<!-- _class: main2 solution -->
-
-# Сделать __итерацию__ для __прогрева__ кеша
-
-## Сделать __тест__ с тем же __каталогом__ кеша
 
 
----
-
-## 1. Почему SiteSpeed хорош
-## 2. Запустим простой тест
-## 3. Найдем параметры по умолчанию
-## 4. Переопределим параметры
-### 5. Прочитаем документацию
-## 6. Демонстрация и итоги
-
----
-
-# Почему можно и __chrome__.__args__ и [browsertime]().__chrome__.__args__?
-## Оба варианта работают
-```sh
-docker run --rm \
-  -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \       
-```
-```sh
-  sitespeedio/sitespeed.io:29.1.0 \
-```
-```bash
-  --chrome.args "user-data-dir=/tmp/chrome-user-data-dir" \
-```
-```sh
-  --chrome.cleanUserDataDir "false" \
-  "https://miro.com"
-```
-
----
-
-# Но нельзя __[browsertime]()__.chrome.cleanUserDataDir
-
-## Работает только опция __chrome__.__cleanUserDataDir__
-
-```sh
-docker run --rm \
-  -v "$(pwd)/sitespeed.io:/sitespeed.io" \
-  -v "$(pwd)/chrome-user-data-dir:/tmp/chrome-user-data-dir" \       
-```
-```sh
-  sitespeedio/sitespeed.io:29.1.0 \
-  --chrome.args "user-data-dir=/tmp/chrome-user-data-dir" \
-```
-```bash
-  --chrome.cleanUserDataDir "false" \
-```
-```sh
-  "https://miro.com"
-```
 
 ---
 
 <!-- _class: main2 solution -->
 
-# __SiteSpeed__ состоит из __Browsertime__, __PageXRay__, ...
+# Сделать __два__ теста с общим каталогом __user-data-dir__
 
-## У каждого компонента свои документация и параметры
-
----
-
-<!-- _class: main invert -->
-
-![bg](img/docs.sitespeed.chrome.png)
-
-# __args__ есть и в __browsertime__ и в __sitespeed__
+## Первый тест прогреет, второй тест будет с кешированием
 
 ---
 
-<!-- _class: main invert -->
+<!-- _class: main -->
 
-![bg](img/docs.browsertime.chrome.png)
-
-# __cleanUserDataDir__ есть только в browsertime
-
----
-
-<!-- _class: main solution -->
-
-# Для конфигурирования через аргументы нужно смотреть __Configuration__ / __The options__ и __sitespeed__ и __browsertime__
-
+# Программирование для SiteSpeed это много конфигурирования SiteSpeed и программирования вокруг него
 
 ---
 
 ## 1. Почему SiteSpeed хорош
 ## 2. Запустим простой тест
-## 3. Найдем параметры по умолчанию
-## 4. Переопределим параметры
-## 5. Прочитаем документацию
-### 6. Демонстрация и итоги
+## 3. Переопределим параметры
+### 4. Демонстрация
+
+## 5. Обсудим вопросы из ![h:40](themes/img/Telegram_logo.svg) @perfconfbot
 
 ---
 
@@ -1064,13 +766,28 @@ _footer: `Image from commons.wikimedia.org/wiki/File:KHThisIsFine.jpg`
 
 ---
 
-<!-- _class: main2 solution -->
+<!-- _class: main problem -->
 
-# Остались вопросы
+# Стало интересно?
 
-## __Приходите в ![h:55](themes/img/Telegram_logo.svg) @qa_load__
+---
+<!-- _class: solution -->
 
-<!--
-_footer: `Images from vlad.studio. Slides from polarnik.github.io/sitespeed.automation/sitespeed.html`
 
- -->
+# Задавайте вопросы в ![h:40](themes/img/Telegram_logo.svg) 
+
+- @__perfconfbot__
+- @__qa_load__, @__smirnovqa__
+
+# Запускайте инструмент и примеры
+
+- sitespeed.io
+- github.com/polarnik/__sitespeed.automation__
+- github.com/wikimedia/__performance-synthetic-monitoring-tests__
+- github.com/wikimedia/__performance-mobile-synthetic-monitoring-tests__
+- __qaload.grafana.net__ (owaspviewer)
+
+# Слайды и картинки
+- polarnik.github.io/sitespeed.automation/sitespeed.html
+- vlad.studio
+
