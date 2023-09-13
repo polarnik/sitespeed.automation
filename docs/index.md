@@ -25,29 +25,21 @@ _footer: `Image by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main2
+<!-- _class: main2 solution
 -->
 
-# SiteSpeed.io для тестов производительности: __настройки и метрики SiteSpeed__
+# [SiteSpeed.io для тестов производительности](https://polarnik.github.io/sitespeed.automation/sitespeed.html): __настройки и метрики SiteSpeed__
 
 ## __13 сентября__, perfconf.ru
 
 
 ---
 
-<!-- _class: main2
+<!-- _class: main2 solution
 -->
 
-# Автотесты производительности Web: __Allure__, __JUnit__, __Java TestContainer__, __SiteSpeed.io__
+# [Автотесты производительности Web](https://polarnik.github.io/sitespeed.automation/sitespeed_autotests.html): __Allure__, __JUnit__, __Java TestContainer__, __SiteSpeed.io__
 
-## __14 сентябя__, it-events.rt.ru
-
----
-
-<!-- _class: main2
--->
-
-# Автотесты производительности API: __Allure__, __JUnit__, __Java TestContainer__, __k6.io__
+## __14 сентябя__, prostomeetup.ru/aqa
 
 
-## __10–11 октября__, heisenbug.ru

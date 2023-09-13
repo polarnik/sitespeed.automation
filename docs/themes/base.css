@@ -273,3 +273,7 @@ pre code.language-sh .hljs-symbol
 {
     color: #f9915755;
 }
+
+section h1 a {
+    color: white;
+}
