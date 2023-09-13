@@ -32,6 +32,8 @@ docker run --shm-size=2g --rm \
   --pageCompleteCheckStartWait 1000 \
   --pageCompleteWaitTime 350000 \
   --browsertime.cacheClearRaw true \
+  --budget.configPath "/config/myBudget.json" \
+  --budget.output junit \
   --influxdb.tags "db=sitespeed,testtype=firstopen,category=sitespeed_board_test" \
   --urlAlias "${1}" \
   --slug "${1}" \
@@ -63,6 +65,8 @@ docker run --shm-size=2g --rm \
   --pageCompleteCheckPollTimeout 1000 \
   --pageCompleteCheckStartWait 2000 \
   --pageCompleteWaitTime 350000 \
+  --budget.configPath "/config/myBudget.json" \
+  --budget.output junit \
   --influxdb.tags "db=sitespeed,testtype=cache,category=sitespeed_board_test" \
   --urlAlias "${1}" \
   --slug "${1}_cache" \

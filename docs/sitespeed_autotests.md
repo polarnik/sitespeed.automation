@@ -42,7 +42,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 # А еще у нас есть инструменты __автоматизации__
 
-- __Web Developer Tools__ (браузера Google Chrome, Mozilla Firefox, ...)
+- __Web Developer Tools__ (Google Chrome, Mozilla Firefox, ...)
 
 - __PageSpeed Insights__, 🔗 `pagespeed.web.dev`
 - __Pagespeed Compare__, 🔗 `pagespeed.compare`
@@ -426,16 +426,35 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 ---
 
-<!-- _class: main -->
-
-# Утилита __AllureCTL__ поддерживает импорт из формата __JUnit-XML__ и экспорт в __Allure TestOps__
+![bg w:100%](img/sitespeed.junit.xml.png)
 
 ---
 
-<!-- _class: main solution -->
+<!-- _class: main error -->
 
-# Результаты проверок в формате __JUnit-XML__ можно загружать  __Allure TestOps__, используя __AllureCTL__ 
+# SiteSpeed 29.5.0 выгружает только __статусы проверок__ в формат __JUnit-XML__ 
 
+## 
+
+
+---
+
+<!-- _class: main -->
+
+# __Allure__ поддерживает формат __JUnit-XML__
+
+---
+
+![bg w:100%](img/allure.commandline.png)
+
+---
+
+![bg w:100%](img/allure.generate.png)
+
+
+---
+
+![bg w:100%](img/allure.report.png)
 
 ---
 
@@ -635,18 +654,22 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 ---
 <!-- _class: solution -->
 
-# Пишите тесты на метрики, сравнивайте их во времени!
+# __Пишите тесты на метрики__, сравнивайте их во времени!
 
 
-# Задавайте вопросы в ![h:40](themes/img/Telegram_logo.svg)  @__qa_load__, @__smirnovqa__
+# Пишите в ![h:40](themes/img/Telegram_logo.svg) 
 
-# Запускайте инструмент и примеры
+- @__qa_load__
+- @__smirnovqa__
 
+# Примеры
 - sitespeed.io
 - github.com/polarnik/__sitespeed.automation__
 - github.com/wikimedia/__performance-synthetic-monitoring-tests__
 - github.com/wikimedia/__performance-mobile-synthetic-monitoring-tests__
 
-# Слайды и картинки
-- polarnik.github.io/sitespeed.automation/__sitespeed.autotests.html__
+# Фоны и слайды
 - vlad.studio
+- polarnik.github.io/sitespeed.automation
+
+![bg h:90%](img/qr-code.svg)

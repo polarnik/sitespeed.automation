@@ -773,21 +773,25 @@ _footer: `Image from commons.wikimedia.org/wiki/File:KHThisIsFine.jpg`
 ---
 <!-- _class: solution -->
 
+# Используйте __sitespeed__.__io__
+# Пишите в ![h:40](themes/img/Telegram_logo.svg) 
 
-# Задавайте вопросы в ![h:40](themes/img/Telegram_logo.svg) 
+- @__qa_load__
+- @__smirnovqa__
 
-- @__perfconfbot__
-- @__qa_load__, @__smirnovqa__
+# Примеры
 
-# Запускайте инструмент и примеры
-
-- sitespeed.io
 - github.com/polarnik/__sitespeed.automation__
 - github.com/wikimedia/__performance-synthetic-monitoring-tests__
 - github.com/wikimedia/__performance-mobile-synthetic-monitoring-tests__
-- __qaload.grafana.net__ (owaspviewer)
 
-# Слайды и картинки
-- polarnik.github.io/sitespeed.automation/sitespeed.html
+# Фоны и слайды
 - vlad.studio
+- polarnik.github.io/sitespeed.automation
 
+
+
+
+
+
+![bg h:90%](img/qr-code.svg)
