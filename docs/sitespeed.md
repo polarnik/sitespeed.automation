@@ -28,7 +28,7 @@ _footer: `Images by Vlad Gerasimov on https://vlad.studio/`
 
 # Ускоряю ![h:55](themes/img/miro.svg) Miro
 ## Развиваю ![h:55](themes/img/Telegram_logo.svg) @qa_load
-
+### Собираю метрики Web-а
 
 ![bg cover](img/omsk.jpg)
 
@@ -713,13 +713,6 @@ _footer: `Image from https://ru.pinterest.com/pin/194710383877328824/`
 
  -->
 
----
-
-<!-- _class: main2   -->
-
-# qaload.grafana.net
-
-## `owaspviewer`
 
 ---
 
